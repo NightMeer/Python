@@ -1,0 +1,13 @@
+services:
+  python:
+    image: ghcr.io/nightmeer/python:3.11.2
+    volumes:
+      - ./src:/src
+    environment:
+      - FILENAME=main.py
+      - ADDITIONAL_COMMAND=
+      #Space separiert
+      - PACKAGES=
+      #Proxy
+      - http_proxy=
+      - https_proxy=
