@@ -1,4 +1,4 @@
-FROM python:3.11.2
+FROM python:3.13.2
 
 ENV FILENAME=main.py
 ENV PACKAGES=""
@@ -6,7 +6,7 @@ ENV ADDITIONAL_COMMAND=""
 
 ARG SOFTWARENAME_VER="1.0.0"
 
-LABEL base.image="python:3.11.2"
+LABEL base.image="python:3.13.2"
 LABEL dockerfile.version="1"
 LABEL software="Python"
 LABEL software.version="${SOFTWARENAME_VER}"

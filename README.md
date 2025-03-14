@@ -11,7 +11,7 @@ Here is an example of a Dockerfile that specifies main.py as the startup file
 ```
 services:
     python:
-    image: ghcr.io/nightmeer/python:3.11.2
+    image: ghcr.io/nightmeer/python:3.13.2
     restart: unless-stopped
     volumes:
       - ./src:/src
@@ -28,6 +28,6 @@ services:
 ## Docker Start
 ```
 
-Docker Start -v ./src:/src -e "FILENAME=main.py" ghcr.io/nightmeer/python:3.11.2 
+Docker Start -v ./src:/src -e "FILENAME=main.py" ghcr.io/nightmeer/python:3.13.2 
 
 ```
