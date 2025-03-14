@@ -1,6 +1,6 @@
 services:
   python:
-    image: ghcr.io/nightmeer/python:3.13.2
+    image: ghcr.io/nightmeer/python:latest
     volumes:
       - ./src:/src
     environment:
