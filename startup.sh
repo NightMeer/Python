@@ -13,7 +13,7 @@ then
   pip install $PACKAGES
 fi
 
-pip freeze > docker-requirements.txt
+pip freeze > requirements.txt
 
 chmod 777 -R /src
 
