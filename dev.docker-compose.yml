@@ -1,0 +1,14 @@
+services:
+  python:
+    build:
+      context: .
+    volumes:
+      - ./src:/src
+    environment:
+      - FILENAME=main.py
+      - ADDITIONAL_COMMAND=
+      #Space separiert
+      - PACKAGES=
+      #Proxy
+      - http_proxy=
+      - https_proxy=
